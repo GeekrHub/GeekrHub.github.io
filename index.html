@@ -18,18 +18,19 @@
     <![endif]-->
     <style>
     	.main-contents{font-size:20px;}
-    	.navigator{
-    		font-size:20px;
-    		background-color:purple;
-    		padding:20px 0px 0px 20px;
-    		margin:0px 0px 20px 0px;
-    		color:white;
-    	}
-    	#login-in{
-    		
-    		padding:0px 20px 10px 0px;
-		float:right;
-    	}
+        #nav{
+            color:white;
+            font-size:20px;
+        }
+        #login-in2{
+            padding:0px 0px 0px 255px;
+        }
+        #bg{
+            background-color:purple;
+        }
+        #heading{
+            padding:50px 0px 0px 0px;
+        }
     </style>
   </head>
   <body>
@@ -39,26 +40,31 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <div class="container">
-    	<h1 class="text-center">GeekrHub by GitHub</h1>
+    	<h1 class="text-center" id="heading">GeekrHub by GitHub</h1>
     	<div class="row">
-    		<div class="col-xs-12 navigator">
-    			<ol class="list-inline">
-    				<li><a href="https://geekrhub.github.io"><font color="white">Home</font></a></li>
-    				<li><a href="https://geekrhub.github.io/touristblog/"><font color="white">Tourist Bolg</font></a></li>
-    				<li><a href="https://geekrhub.github.io/US TOUR/"><font color="white">US TOUR</font></a></li>
-    				<li id="login-in">
-    					<form class="form-inline">
-    						<input type="type" class="input-small" placeholder="Email">
-    						<input type="password" class="input-small" placeholder="Password">
-    						<label class="checkbox">
-    							<input type="checkbox"> Remember me
-    						</label>
-    						<button type="submit" class="btn">Sign in</button>
-    					</form>
-    				</li>
-    			</ol>
-    			
-    		</div>
+            <div class="col-xs-12">
+                <nav class="navbar navbar-default navbar-fixed-top" id="bg">
+                    <div class="container">
+                        <a class="navbar-brand" href="https://geekrhub.github.io" id="nav">Home</a>
+                        <div>
+                            <ul class="nav navbar-nav">
+                                <li><a href="https://geekrhub.github.io/touristblog/" id="nav">Tourist Blog</a></li>
+                                <li><a href="https://geekrhub.github.io/US TOUR/" id="nav">US TOUR</a></li>
+                                
+                                <form class="navbar-form pull-right" id="login-in2">
+                                    <input type="text" class="input" placeholder="User Name">
+                                    <input type="password" class="input" placeholder="Password">
+                                    <label class="checkbox">
+                                        <input type="checkbox"><font size="3px" color="white"> Remember me</font>
+                                    </label>
+                                    <button type="submit" class="btn">Login in</button>
+                                </form>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
     	</div>
     	
     	<div class="row main-contents">
