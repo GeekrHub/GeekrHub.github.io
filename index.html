@@ -36,6 +36,9 @@
         #heading{
             padding:50px 0px 0px 0px;
         }
+	    #heading-xs{
+            padding:0px 0px 0px 0px;
+        }
     </style>
   </head>
   <body>
@@ -45,7 +48,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <div class="container">
-    	<h1 class="text-center" id="heading">GeekrHub by GitHub</h1>
+    	<h1 class="text-center hidden-xs" id="heading">GeekrHub by GitHub</h1>
+	    <h1 class="text-center visible-xs" id="heading-xs">GeekrHub by GitHub</h1>
     	<div class="row container">
             <div class="col-xs-12 hidden-xs">
                 <nav class="navbar navbar-default navbar-fixed-top" id="bg">
@@ -71,30 +75,7 @@
                     </div>
                 </nav>
             </div>
-		<div class="col-xs-12 visible-xs">
-                <nav class="navbar navbar-default navbar-fixed-top" id="bg">
-                    <div class="container">
-                        <!-- <a class="navbar-brand" href="https://geekrhub.github.io" id="nav">Home</a> -->
-                        <div>
-                            <ul class="nav-xs navbar-nav">
-				    <li><a class="navbar-brand" href="https://geekrhub.github.io" id="nav">Home</a></li>
-                                <li><a href="https://geekrhub.github.io/touristblog/" id="nav">Tourist Blog</a></li>
-                                <li><a href="https://geekrhub.github.io/US TOUR/" id="nav">US TOUR</a></li>
-                                <!--
-                                <form class="navbar-form pull-right" id="login-in2">
-                                    <input type="text" class="input" placeholder="User Name">
-                                    <input type="password" class="input" placeholder="Password">
-                                    <label class="checkbox">
-                                        <input type="checkbox"><font size="3px" color="white"> Remember me</font>
-                                    </label>
-                                    <button type="submit" class="btn">Login in</button>
-                                </form>
-				-->
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
+		
     	</div>
     	
     	<div class="row main-contents">
