@@ -39,6 +39,14 @@
 	    #heading-xs{
             padding:0px 0px 0px 0px;
         }
+        .borderless tbody tr td,
+        .borderless tbody tr th,
+        .borderless thead tr th,
+        .borderless thead tr td,
+        .borderless tfoot tr th,
+        .borderless tfoot tr td {
+            border: none;
+}
     </style>
   </head>
   <body>
@@ -69,7 +77,7 @@
                                     </label>
                                     <button type="submit" class="btn">Login in</button>
                                 </form>
-				-->
+				                -->
                             </ul>
                         </div>
                     </div>
@@ -104,7 +112,8 @@
                 <div class="row">
                     <div class="col-xs-8">
                         <br>
-                        <h3><i class="fa fa-book fa-lg"></i> 2017 Reading List <font size="2px">- Updated on Feb 2, 2017</font></h3>
+                        <h3 class="hidden-xs"><i class="fa fa-book fa-lg"></i> 2017 Reading List <font size="2px">- Updated on Feb 2, 2017</font></h3>
+                        <h3 class="visible-xs"><i class="fa fa-book"></i> 2017 Reading List <font size="1px">- Updated on Feb 2, 2017</font></h3>
                         <br>
                         <table class="table table-hover">
                             <tr>
@@ -285,23 +294,35 @@
             </div>
 
 		</div>
-		<div class="main-contents">
+        <div class="main-contents">
             <br>
-			<ul class="nav nav-list">
-                <li class="nav-divider"></li>
-            </ul>
-            <br>
-			<address>
-				<i class="fa fa-github fa-lg"></i>&nbsp;&nbsp;&nbsp;<a href="https://github.com/GeekrHub" title="Click to view GitHub Page"><font color="#333"><strong>GeekrHub</strong></font></a><br>
-				<i class="fa fa-address-card fa-lg"></i> &nbsp;Virtual Solutions Computer Software China<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nanjing, Jiangsu, China<br>
-				<i class="fa fa-phone fa-lg"></i>&nbsp;&nbsp;&nbsp;&nbsp;(123) 456-7890
-			</address>
-			<address>
-				<i class="fa fa-copyright fa-lg"></i>&nbsp;&nbsp;&nbsp;<strong>Virtual Solutions China</strong><br>
-				<i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;<a href="#">geekrhub@virtual-solutions.cn</a>
-			</address>
-		</div>
+            <table class="table borderless">
+                <tr>
+                    <td class="borderless" width="1px"><i class="fa fa-github fa-lg"></i></td>
+                    <td><a href="https://github.com/GeekrHub" title="Click to view GitHub Page"><font color="#333"><strong>GeekrHub</strong></font></a></td>
+                </tr>
+                <tr>
+                    <td class="borderless" width="1px"><i class="fa fa-address-card fa-lg"></i></td>
+                    <td>Virtual Solutions Computer Software China</td>
+                </tr>
+                <tr>
+                    <td class="borderless" width="1px"></td>
+                    <td>Nanjing, Jiangsu, China</td>
+                </tr>
+                <tr>
+                    <td class="borderless" width="1px"><i class="fa fa-phone fa-lg"></i></td>
+                    <td>(123) 456-7890</td>
+                </tr>
+                <tr>
+                    <td class="borderless" width="1px"><i class="fa fa-copyright fa-lg"></i></td>
+                    <td><strong>Virtual Solutions China</strong></td>
+                </tr>
+                <tr>
+                    <td class="borderless" width="1px"><i class="fa fa-envelope fa-lg"></i></td>
+                    <td><a href="#">geekrhub@virtual-solutions.cn</a></td>
+                </tr>
+            </table>
+        </div>
 		<div class="main-contents text-center">
 			<br>
 			<br>
